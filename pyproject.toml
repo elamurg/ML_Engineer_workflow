@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml_engineer_workflow"
+version = "0.1.0"
+dependencies = ["pandas", "scikit-learn", "numpy", "pydantic", "fastapi", "uvicorn"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
