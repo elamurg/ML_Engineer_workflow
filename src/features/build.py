@@ -10,3 +10,5 @@ def build_features(df: pd.DataFrame, target: str, test_size: float, random_state
         stratify=y if y.nunique() < 20 else None
     )
     return X_train, X_test, y_train, y_test
+
+    
